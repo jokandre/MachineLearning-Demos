@@ -1,6 +1,8 @@
-# Gradient Descent
+# Gradient Descent from scratch
 
-*Comparing and analysing gradient descent implementations*
+One variable linear regression with gradient descent.
+
+### Comparing and analysing gradient descent implementations
 
 myGradient.py was inspired by Andrew Ng's Machine Learning course on Coursera.
 
