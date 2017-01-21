@@ -4,7 +4,6 @@ at https://github.com/mattnedrich/GradientDescentExample.git
 '''
 
 #helper functions for gradient descent
-from array import array
 #cost funct = squared error funtion = 1/N SUM(Yi - (MXi+B))^2
 def compute_error_for_line_given_points(b, m, points):
 	totalError = 0
