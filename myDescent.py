@@ -17,7 +17,7 @@ def cost_SSE( points, t0, t1 ):
         x_i = points[i][0] #get x value from dataset
         y_i = points[i][1] #get y value from dataset
         totalError += ( h_theta(t0, t1, x_i)  - y_i)**2
-    return totalError# / 2*float(len(points))
+    return totalError / #2*float(len(points))
 
 
 def gradient_descent( points, t0, t1, alpha = 0.01, max_iter=10000, ep = 0.01):
