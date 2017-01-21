@@ -1,3 +1,8 @@
+'''
+Inspired from: Matt Nedrich  @mattnedrich
+at https://github.com/mattnedrich/GradientDescentExample.git
+'''
+
 #helper functions for gradient descent
 from array import array
 #cost funct = squared error funtion = 1/N SUM(Yi - (MXi+B))^2
@@ -39,6 +44,3 @@ def gradient_descent_runner( points, starting_b, starting_m, learning_rate, num_
 		b, m = step_gradient(b, m, points, learning_rate)
 
 	return [b, m]
-
-def yo():
-	print('call me maybe')
