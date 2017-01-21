@@ -41,4 +41,4 @@ def gradient_descent_runner( points, starting_b, starting_m, learning_rate, num_
 	return [b, m]
 
 def yo():
-	print('call me')
+	print('call me maybe')
