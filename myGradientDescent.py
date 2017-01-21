@@ -1,7 +1,7 @@
 #helper functions for gradient descent
 from array import array
 #cost funct = squared error funtion = 1/N SUM(Yi - (MXi+B))^2
-def compute_error_for_line_given_points(m, b, points):
+def compute_error_for_line_given_points(b, m, points):
 	totalError = 0
 	#for every point in dataset
 	for i in range(0, len(points)):
@@ -17,12 +17,12 @@ def step_gradient(b_current, m_current, points, learning_rate):
 	N = float(len(points))
 
 	for i in range(0, len(points)):
-		x = points[i][0]
-		y = points[i][1]
+		x = points[i, 0]
+		y = points[i, 1]
 		#direction with respect to b and m
 		#computing partial derivatices of error function
 		b_gradient += -(2/N) * (y - ((m_current * x) + b_current))
-		m_gradient += (2/N) * x * (y - ((m_current *x) + b_current))
+		m_gradient += -(2/N) * x * (y - ((m_current *x) + b_current))
 	#update b and m values using partial derivatives
 	new_b = b_current - (learning_rate * b_gradient)
 	new_m = m_current - (learning_rate * m_gradient)
