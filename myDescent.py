@@ -1,5 +1,5 @@
-def yo(message = 'mamacita'):
-    print(message)
+# Inspired in Andrew Ng class
+
 
 # hypothetical line, slope as t1 && y-intercept as t0
 def h_theta(t0, t1, x):
