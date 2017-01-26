@@ -10,3 +10,12 @@ GradientDescent1.py followed the implementation on Siraj Raval video.
 
 #### TODO
 - Use a library to compare results
+
+
+#### Use
+```
+pip install virtualenv
+virtualenv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
